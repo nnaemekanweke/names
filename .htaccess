@@ -6,8 +6,8 @@ Options -Indexes
 # set default index-page
 DirectoryIndex index.php home.php about.php index.html maintenance.html
 
-RewriteCond %{HTTP_HOST} ^www\.uinames\.com$ [NC]
-RewriteRule (.*) https://uinames.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.names\.nnaemekanweke\.com$ [NC]
+RewriteRule (.*) https://names.nnaemekanweke.com/$1 [R=301,L]
 
 # rewrite www to https
 # RewriteCond %{HTTP_HOST} ^www\.
