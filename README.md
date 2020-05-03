@@ -1,4 +1,4 @@
-names.nnaemekanweke.com
+names
 =======
 
 This is the repo for [names.nnaemekanweke.com](https://names.nnaemekanweke.com). Feel free to contribute to the project by adding names. Keep in mind that more isn't better. Quality over quantity. Quality being the most common/popular names in a region.
