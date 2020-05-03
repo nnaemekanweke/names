@@ -102,7 +102,7 @@ function generate_ext_result($result) {
 	
 	// photo
 	$photos = ($gender == 'male') ? glob('photos/male/*.jpg') : glob('photos/female/*.jpg');
-	$result['photo'] = 'https://uinames.com/api/' . $photos[array_rand($photos)];
+	$result['photo'] = 'https://names.nnaemekanweke.com/api/' . $photos[array_rand($photos)];
 	
 	return $result;
 }

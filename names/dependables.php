@@ -19,7 +19,7 @@ function github($format) {
 	if ((time() - filemtime($file)) > 3600*12) { // || $_GET['forcerefresh']) {
 
 		// get most recent json data
-		$url = 'https://api.github.com/repos/thm/uinames/contributors?per_page=100';
+		$url = 'https://api.github.com/repos/nnaemekanweke/names/contributors?per_page=100';
 		
 		// check status
 		if (getStatus($url) == 200) {
