@@ -1,0 +1,156 @@
+body {
+    background: rgb(185, 0, 124); 
+    background: -webkit-linear-gradient(to right, rgb(185, 0, 124), rgb(223, 120, 3));  
+    background: linear-gradient(to right, rgb(185, 0, 124), rgb(167, 185, 0)); 
+}
+.content {
+    margin-top: 40px;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 34px;
+}
+
+form {
+    background-color: white;
+    padding: 50px 50px 5px 50px;
+}
+
+.list {
+    list-style: none;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid rgb(185, 0, 124); 
+    background: rgb(252, 209, 153); 
+}
+.list li:last-child{
+    margin:0;
+}
+
+#help {
+    padding-top: 50px;
+    width:80%;
+    margin:auto;
+    text-align: center;
+}
+
+/*--SHAREBOX--*/
+
+#share {
+	width: 100%;
+	height: 32px;
+	bottom: 25px;
+	padding: 6px;
+	background: #fff;
+	white-space: nowrap;
+    overflow: hidden;
+    /* 
+	position: fixed; 
+    z-index: 500;*/
+    margin:auto;
+    text-align: center;
+
+	border-radius: 5px;
+
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+	   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+	        box-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+
+.share-button, .share-count {
+	height: 20px;
+	padding: 3px 5px;
+	font-size: 11px;
+	font-weight: 700;
+	line-height: 120%;
+	letter-spacing: -0.25px;
+	color: #fff;
+	background: #111;
+	position: relative;
+	vertical-align: top;
+	display: inline-block;
+
+	border-radius: 3px;
+}
+
+.twitter-button .share-button {background: #1b95e0;}
+.twitter-button .share-button:hover {background: #0c7abf;}
+
+.facebook-button .share-button {background: #4267b2;}
+.facebook-button .share-button:hover {background: #365899;}
+
+.github-button .share-button {
+	color: #333;
+	text-shadow: 0 1px 0 #fff;
+	background: #eee;
+	
+	-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset;
+	   -moz-box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset;
+	        box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset;
+
+	background: -webkit-linear-gradient(#fff, #eee);
+	   background: -moz-linear-gradient(#fff, #eee);
+	        background: linear-gradient(#fff, #eee);
+}
+
+.github-button .share-button:hover {
+	-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.3) inset;
+	   -moz-box-shadow: 0 0 0 1px rgba(0,0,0,.3) inset;
+	        box-shadow: 0 0 0 1px rgba(0,0,0,.3) inset;
+}
+
+.share-button svg {
+	height: 14px;
+	width: 14px;
+	margin-right: 4px;
+	display: inline-block;
+	float: left;
+}
+
+.share-count {
+	margin: 0 2px;
+	padding: 2px 3px;
+	font-weight: 600;
+	color: #555;
+	border: 1px solid #bbb;
+	background: #fff;
+}
+
+.share-count:hover {
+	border-color: #aaa;
+	color: #333;
+}
+
+.share-count:before,
+.share-count:after {
+	content: '';
+	height: 6px;
+	width: 6px;
+	top: 50%;
+	left: -3.75px;
+	margin-top: -3px;
+	background: #bbb;
+	position: absolute;
+	z-index: -1;
+
+	border-radius: 0px 100% 0px 1px;
+
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+
+.share-count:after {
+	left: -2px;
+	background: #fff;
+	z-index: 1;
+}
+
+.nav {
+    text-decoration:none;
+    color:#fff;
+}

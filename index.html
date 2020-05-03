@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    	
+	<title>Generate Random Fake Names</title>
+	<meta name="description" content="Generate random fake names for use in designs and mockups. Supports 50+ regions with more than 1.2 million possible combinations. Completely open-source." />
+	<meta name="keywords" content="uinames, dummy, random, names, fake, generator, name, personas" />
+	
+	<link rel="shortcut icon" href="https://names.nnaemekanweke.com/assets/img/favicon@2x.ico" />
+	
+	<link href="https://names.nnaemekanweke.com/assets/css/tyles.css" rel="stylesheet" />
+	
+	<!--viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	
+	<!--identity-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-title" content="uinames">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon" href="https://names.nnaemekanweke.com/assets/img/ios-precomposed.png" />
+	
+	<!--Facebook Card-->
+	<meta property="og:title" content="Randomly Generate Fake Names" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://cl.ly/1o2k1Z422Z2T/icon-250.png" />
+	<meta property="og:url" content="https://names.nnaemekanweke.com" />
+	<meta property="og:description" content="Generate random fake names for use in designs and mockups. Supports 48+ regions with over 1.2 million possible combinations. Completely open-source." />
+	
+	<!--Twitter Card-->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@codegenty" />
+	<meta name="twitter:title" content="Randomly Generate Fake Names" />
+	<meta name="twitter:description" content="Generate random fake names for use in designs and mockups. Supports 48+ regions with over 1.2 million possible combinations. Completely open-source." />
+	<meta name="twitter:image" content="https://cl.ly/1o2k1Z422Z2T/icon-250.png" />
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div class="container">
+        <div id="content" class="content">
+            <a href="." class="nav"><h1>Simple Name Generate App</h1></a>
+            <form action="#" id="generate-names">
+                <div class="row">
+                    <div class="six columns">
+                        <label for="country">Filter By Country:</label>
+                        <select class="u-full-width" id="country">
+                            <option value=''>-- Select --</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="costa rica">Costa Rica</option>
+                            <option value="china">China</option>
+                            <option value="france">France</option>
+                            <option value="italy">Italy</option>
+                            <option value="mexico">Mexico</option>
+                            <option value="nigeria" selected>Nigeria</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="united states">United States</option>
+                            <option value="india">India</option>
+                            <option value="japan">Japan</option>
+                        </select>
+                        <label for="genre">Genre:</label>
+                        <select class="u-full-width" id="gender">
+                                <option value=''>-- Select --</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                        </select>
+                        <label>Number of names to generate</label>
+                        <input type="number" id="quantity" class="u-full-width" min="5" max="15" value="5">
+                        <input class="button-primary u-full-width" type="submit" value="Generate">
+                    </div>
+
+                    <div class="six columns">
+                        <div id="result"></div>
+                    </div>
+                </div>
+
+                <div id="help">
+                    <p class="tip-1">Share = ❤️<br>
+                    Send <a href="https://twitter.com/codegenty" target="_blank">@codegenty</a> your feedback. 👋️
+                    Contribute through <a href="https://github.com/nnaemekanweke/names" target="_blank">Github</a>! 👋</p>
+                    <!-- <p class="tip-6"><a href="https://paypal.me/thomweerd" target="_blank">Donate</a> if this site is useful! 💸</p> -->
+                </div>
+                <div id="share">
+                    <a href="https://twitter.com/share?text=Generate%20random%20names%20for%20use%20in%20designs%20and%20mockups%20on&url=https://names.nnaemekanweke.com&via=codegenty&related=codegenty" class="twitter-button" onclick="window.open(this.href, 'Tweet', 'scrollbars=no,width=500,height=280'); return false;">
+                        <span class="share-button"><?php echo file_get_contents('assets/img/share-tw.svg'); ?>Tweet</span>
+                        <span class="share-count">2.1k</span>
+                        <!-- Conservative guess based on increased FB count: (NewFB/oldFB) * oldTw or (1.7/1.5) * 1.9 -->
+                    </a>
+                    
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://names.nnaemekanweke.com" class="facebook-button" onclick="window.open(this.href, 'Share', 'scrollbars=no,width=500,height=280'); return false;">
+                        <span class="share-button"><?php echo file_get_contents('assets/img/share-fb.svg'); ?>Share</span>
+                        <span class="share-count">4.7k</span>
+                        <!-- Source (Dec 5, 2018): https://graph.facebook.com/?id=http://names.nnaemekanweke.com + https://graph.facebook.com/?id=https://names.nnaemekanweke.com -->
+                    </a>
+                    
+                    <a href="https://github.com/nnaemekanweke/names/" class="github-button" target="_blank">
+                        <span class="share-button"><?php echo file_get_contents('assets/img/share-gh.svg'); ?>Star</span>
+                        <span class="share-count">0.5k</span>
+                    </a>
+                </div>                
+                
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+    <script src="https://names.nnaemekanweke.com/assets/js/jquery.min.js"></script>
+	<script src="https://names.nnaemekanweke.com/assets/js/site.js"></script>
+</body>
+</html>
