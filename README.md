@@ -82,11 +82,5 @@ https://names.nnaemekanweke.com/api/<strong>?ext</strong>
 Error messages have the following format:
 <pre>{"error":"Region or language not found"}</pre>
 
-### Author
-This project is initiated by [@thomweerd](https://twitter.com/thomweerd) and matained by [@codegenty](https://twitter.com/codegenty).
-
-### Credit
-Special thanks to [Claudio Albertin](https://github.com/ClaudioAlbertin) for his work on the API and all contributors.
-
 ### License
 Parts of this repository are licensed. Except where otherwise stated, any code not covered by this license is published under exclusive copyright. See [LICENSE.md](LICENSE.md) to learn more.
